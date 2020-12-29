@@ -1,0 +1,59 @@
+:root {
+    font-size: 40px;
+    text-color: #555;
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    width: 700px;
+    /*height: 400px;*/
+    border: 1.5px solid #777;
+    background: #DDD;
+}
+
+.steps {
+    /*display: flex;*/
+    /*overflow-x: auto;*/
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+
+    border: 10px solid #9FF;/*rgba(0,0,255,0.3);*/
+
+
+    /*height: 400px;*/
+}
+
+
+
+
+.step {
+    border: 10px solid rgba(0,255,0,0.3);
+    height: 150px;
+    margin-top: 50;
+    /*vertical-align: middle;*/
+}
+
+/*отображаемый report*/
+.report {
+    border: 10px solid rgba(0,255,0,0.3);
+    height: 150px;
+    margin-top: 50;
+}
+
+
+.step textarea, .report textarea {
+    height: 80px;
+    width: 300px;
+    background: #FF9;
+}
+
+.step p, .report p {
+    font-size: 15px;
+    /*font-color: yellow;*/
+}
+
+.step-hidden, .report-hidden, .static-hidden, .hidden {
+    display: none;
+}

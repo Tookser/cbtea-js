@@ -1,0 +1,52 @@
+<!--DOCTYPE html-->
+<html>
+  <head>
+    <title>Сверхлокальный психотерапевт</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="steps">
+        <div class="step" id="step-1">
+          <!-- приветствие -->
+          <p>Привет! Это программа для работы с негативными мыслями по методу когнитивно-поведенческой терапии. Все данные хранятся на твоём компьютере и никуда не отправляются. Чтобы начать, нажми кнопку "Дальше".</p>
+        </div>
+        <div class="step-hidden" id="step-2">
+          <!-- Описание ситуации -->
+          <p>Опишите вашу ситуацию. Что произошло?</p>
+          <textarea id="situation"></textarea>
+        </div>
+        <div class="step-hidden" id="step-3">
+          <!-- Чувства -->
+          <p>Какие чувства вы испытываете?</p>
+          <textarea id="feelings"></textarea>
+        </div>
+        <div class="step-hidden" id="step-4">
+          <!-- Автоматические мысли -->
+          <p>Какие у вас мысли?</p>
+          <textarea id="thoughts"></textarea>
+        </div>
+        <div class="step-hidden" id="step-5">
+          <!-- Ответ на автоматические мысли -->
+          <p>Что вы на них можете ответить?</p>
+          <textarea id="answers"></textarea>
+        </div>
+        <div class="step-hidden" id="step-6">
+          <!-- Финал -->
+          <p>Вы можете вернуться, если что-то вспомнили.</p>
+        </div>
+        <div id="report" class="hidden">
+          <!-- Отчёт -->
+          <p>Вот результат вашей работы.<br>Вы можете скопировать его, нажав на кнопку "скопировать"</p>
+          <textarea id="result" readonly></textarea>
+          <button id="copy-result" onclick="copyToBuffer()">Скопировать</button>
+        </div>
+      </div>
+      <div class="navigation-buttons-block">
+        <button class="navigation-button" onclick="pred()">Назад</button>
+        <button class="navigation-button" onclick="next()">Дальше</button>
+      </div>
+    </main>
+  </body>
+</html>
