@@ -15,9 +15,10 @@ main {
 .steps {
     /*display: flex;*/
     /*overflow-x: auto;*/
+    /*margin-top: 20px;*/
     width: 600px;
     height: 300px;
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
 
     border: 10px solid #9FF;/*rgba(0,0,255,0.3);*/
 
@@ -56,4 +57,32 @@ main {
 
 .step-hidden, .report-hidden, .static-hidden, .hidden {
     display: none;
+}
+
+.navigation-buttons-block {
+    margin-bottom: 20px;
+}
+
+
+button {
+    background-color: #CCC;
+}
+
+.navigation-button {
+    font-size: 20px;
+}
+
+#button-next {
+    transform: rotate(12deg);
+    background-color: #BABACC;
+}
+
+#button-pred {
+    transform: rotate(-8deg);
+    background-color: #BACCBA;
+}
+
+#button-help {
+    border-radius: 50%;
+    background-color: #B0CCCC;
 }

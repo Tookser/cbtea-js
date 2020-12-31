@@ -10,15 +10,22 @@ function next() {
   if (step < maxStep) {
     document.getElementById('step-'+ String(step)).className = 'step-hidden';
     step++;
-    document.getElementById('step-'+ String(step)).className = 'step';
-    // alert(step);
+
+    let form = document.getElementById('step-'+ String(step));
+    form.className = 'step';
+
+    let textarea = form.querySelectorAll('textarea')[0];
+    textarea.focus();
   } else {
-    // скрывает шаг и кнопки
+
+    // скрывает шаг
     document.getElementById('step-' + String(step)).className = 'step-hidden';
-    document.getElementsByClassName('navigation-buttons-block')[0].className = 'hidden';
     step++;
 
-    // let situationText = document.getElementById('situation').value;
+    // скрывает кнопки
+    document.getElementsByClassName('navigation-buttons-block')[0].className = 'hidden';
+
+
 
     let resultTextarea = document.getElementById('result');
     resultTextarea.value = createResult();
@@ -36,7 +43,11 @@ function pred() {
   if (step > 1 && step <= maxStep) {
     document.getElementById('step-'+ String(step)).className = 'step-hidden';
     step--;
-    document.getElementById('step-'+ String(step)).className = 'step';
+    let form = document.getElementById('step-'+ String(step));
+    form.className = 'step';
+
+    let textarea = form.querySelectorAll('textarea')[0];
+    textarea.focus();
   }
 }
 
