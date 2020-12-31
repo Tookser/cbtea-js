@@ -8,13 +8,13 @@ function next() {
   /*открывает следующий шаг
   если шаг последний, выводит отчёт*/
   if (step < maxStep) {
-    document.getElementById('step-'+ step.toString()).className = 'step-hidden';
+    document.getElementById('step-'+ String(step)).className = 'step-hidden';
     step++;
-    document.getElementById('step-'+ step.toString()).className = 'step';
+    document.getElementById('step-'+ String(step)).className = 'step';
     // alert(step);
   } else {
     // скрывает шаг и кнопки
-    document.getElementById('step-' + step.toString()).className = 'step-hidden';
+    document.getElementById('step-' + String(step)).className = 'step-hidden';
     document.getElementsByClassName('navigation-buttons-block')[0].className = 'hidden';
     step++;
 
@@ -34,9 +34,9 @@ function pred() {
   /*открывает предыдущий шаг
   если шаг первый, ничего не делает*/
   if (step > 1 && step <= maxStep) {
-    document.getElementById('step-'+ step.toString()).className = 'step-hidden';
+    document.getElementById('step-'+ String(step)).className = 'step-hidden';
     step--;
-    document.getElementById('step-'+ step.toString()).className = 'step';
+    document.getElementById('step-'+ String(step)).className = 'step';
   }
 }
 
