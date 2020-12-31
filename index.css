@@ -1,7 +1,8 @@
 :root {
-    font-size: 40px;
+    /*font-size: 40px;*/
     text-color: #555;
     text-align: center;
+    /*--button-scale: 1.09;*/
 }
 
 main {
@@ -10,6 +11,11 @@ main {
     /*height: 400px;*/
     border: 1.5px solid #777;
     background: #DDD;
+    font-family: sans-serif;
+}
+
+footer {
+    font-family: cursive;
 }
 
 .steps {
@@ -50,6 +56,11 @@ main {
     background: #FF9;
 }
 
+.report textarea {
+    font-family: monospace;
+    font-size: 13px;
+}
+
 .step p, .report p {
     font-size: 15px;
     /*font-color: yellow;*/
@@ -68,6 +79,10 @@ button {
     background-color: #CCC;
 }
 
+/*button:hover {
+    transform: scale(var(button-scale));
+}*/
+
 .navigation-button {
     font-size: 20px;
 }
@@ -85,4 +100,6 @@ button {
 #button-help {
     border-radius: 50%;
     background-color: #B0CCCC;
+    font-size: 13px;
+    padding: 3px 5px;
 }
