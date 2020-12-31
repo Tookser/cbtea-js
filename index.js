@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 let step = 1;
 const maxStep = 5;
