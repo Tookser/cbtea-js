@@ -7,8 +7,11 @@
 
 main {
     margin: 0 auto;
-    width: 700px;
+
+    width: 70vw;
+    height: 90vh;
     /*height: 400px;*/
+
     border: 1.5px solid #777;
     background: #DDD;
     font-family: sans-serif;
@@ -16,14 +19,16 @@ main {
 
 footer {
     font-family: cursive;
+    height: 10vh;
+    width:auto;
 }
 
 .steps {
     /*display: flex;*/
     /*overflow-x: auto;*/
     /*margin-top: 20px;*/
-    width: 600px;
-    height: 300px;
+    width: 60vw;
+    height: 70vh;
     margin: 20px auto 0 auto;
 
     border: 10px solid #9FF;/*rgba(0,0,255,0.3);*/
@@ -36,33 +41,49 @@ footer {
 
 
 .step {
-    border: 10px solid rgba(0,255,0,0.3);
-    height: 150px;
+    border: 2vmin solid rgba(0,255,0,0.3);
+    height: 50vh;
     margin-top: 50;
+
     /*vertical-align: middle;*/
 }
 
 /*отображаемый report*/
 .report {
-    border: 10px solid rgba(0,255,0,0.3);
-    height: 150px;
+    border: 2vmin solid rgba(0,255,0,0.3);
+    height: 50vh;
     margin-top: 50;
 }
 
 
 .step textarea, .report textarea {
-    height: 80px;
-    width: 300px;
+    height: 35vh;
+    width: 30vw;
     background: #FF9;
 }
 
 .report textarea {
+    height: 25vh;
+    width: 30vw;
+
+    /*background: #FF9;*/
+}
+
+.report textarea {
     font-family: monospace;
-    font-size: 13px;
+
+    /*font-size: 13px;*/
+    font-size: 3vmin;
+
 }
 
 .step p, .report p {
-    font-size: 15px;
+    /*font-size: 15px;*/
+    font-size: 4vmin;
+
+    /*width: 20vw;*/
+    /*margin: 3vh auto;*/
+    /*text-align: right;*/
     /*font-color: yellow;*/
 }
 
